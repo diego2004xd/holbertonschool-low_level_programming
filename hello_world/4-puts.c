@@ -12,6 +12,6 @@
  */
 int main(void)
 {
-	pust("\"programming is like building a multilingual puzzle");
+	putc("\"programming is like building a multilingual puzzle");
 	return (0);
 }
