@@ -1,7 +1,3 @@
-/*
- * five: 4-puts.c
- * auth: diego beltran
- */
 #include <stdio.h>
 
 /**
@@ -12,6 +8,6 @@
  */
 int main (void)
 {
-	pust(programming is like building a multilingual puzzle");
+	puts("/"Programming is like building a multilingual puzzle");
 	return (0);
 }
