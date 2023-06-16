@@ -10,8 +10,8 @@
  *
  * Return: Always 0.
  */
-int main (void)
+int main(void)
 {
-	pust(programming is like building a multilingual puzzle");
+	pust("\"programming is like building a multilingual puzzle");
 	return (0);
 }
