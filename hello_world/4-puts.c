@@ -12,6 +12,6 @@
  */
 int main(void)
 {
-	putc("\"programming is like building a multilingual puzzle");
+	puts.c("\"programming is like building a multilingual puzzle");
 	return (0);
 }
