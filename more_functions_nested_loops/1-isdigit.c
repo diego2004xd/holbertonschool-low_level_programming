@@ -1,13 +1,19 @@
-#include "main.h"
-/**
- * _isupper - checks for uppercase character.
- * @c: parameter for function
- *
- * Return: 1 if letter is uppercase 0 if otherwise.
+/*
+ * File: 1-isdigit.c
+ * Auth: David Vasquez
  */
-int _isupper(int c)
+
+#include "main.h"
+
+/**
+ * _isdigit -  checks for a digit
+ * @c: the parameter
+ *
+ * Return: 1 if c is digit 0 if otherwise
+ */
+int _isdigit(int c)
 {
-	if (c >= 65 && c <= 90)
+	if (c >= 48 && c <= 57)
 		return (1);
 	else
 		return (0);
