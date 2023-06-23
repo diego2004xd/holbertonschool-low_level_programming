@@ -1,6 +1,6 @@
 /*
  * File: 3-print_numbers.c
- * Auth: diego
+ * Auth: Diego beltran
  */
 
 #include "main.h"
