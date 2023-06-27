@@ -3,7 +3,7 @@
 
 /*
  * File: main.h
- * Author: Ricardo Valdes
+ * Author: diego beltran
  * Description: Header file of  prototypes for functions
  */
 
