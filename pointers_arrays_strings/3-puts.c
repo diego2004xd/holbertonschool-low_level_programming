@@ -1,7 +1,8 @@
 #include "main.h"
 
 /**
- * main - check the code
+ * _pust - print a string, followed by a new line 
+ * @str: pointer parameter
  *
  * Return: Always 0.
  */
