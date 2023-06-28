@@ -1,12 +1,16 @@
+/*
+ * File: 3-puts.c
+ * Auth: Diego beltran
+ */
+
 #include "main.h"
 
 /**
- * main - check the code
+ * _puts - prints a string, followed by a new line
+ * @str: Pointer parameter
  *
  * Return: Always 0.
  */
-void _puts(char *str)
-
 void _puts(char *str)
 {
 	while (*str)
