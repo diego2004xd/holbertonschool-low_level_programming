@@ -8,6 +8,7 @@
  */
 char *_strchr(char *s, char c)
 {
+<<<<<<< HEAD
      int i;
      
      for (i = 0; i < c; i++);
@@ -19,4 +20,15 @@ char *_strchr(char *s, char c)
      }
 
      return (null);
+=======
+	for (; ; s++)
+	{
+		if (*s == c)
+			return (s);
+		if (*s == 0)
+			return (NULL);
+	}
+
+	return (NULL);
+>>>>>>> 843705da6e2d588be1d90fabfabc2a4dcdb28370
 }
