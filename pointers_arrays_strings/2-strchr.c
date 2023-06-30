@@ -1,33 +1,22 @@
-<<<<<<< HEAD
-[200~#include "main.h"
-
-/**
- *  * _strchr - locates a character in a string.
- *   * @s: chain strings
- *    * @c: letter compare
- *     *
- *      * Return: character c
- *       */
-=======
 #include "main.h"
-
 /**
- * _strchr - locates a character in a string.
- * @s: chain strings
- * @c: letter compare
- *
- * Return: character c
+ * function that locates a character in a string.
+ * _strchr: function that locates a character in a string.
+ * @c: chain character
+ * @s: copy character
+ *return: null
  */
->>>>>>> c42206ef78f269564d15075e0cfb14194cbec1ab
 char *_strchr(char *s, char c)
 {
-		for (; ; s++)
-				{
-							if (*s == c)
-											return (s);
-									if (*s == 0)
-													return (NULL);
-										}
+     int i;
+     
+     for (i = 0; i < c; i++);
+     {
+	     if (*s == c)
+		     return (s);
+	     if (*s == 0)
+		     return (null);
+     }
 
-			return (NULL);
+     return (null);
 }
