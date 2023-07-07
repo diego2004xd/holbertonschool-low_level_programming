@@ -1,5 +1,4 @@
 #include <stddef.h>
-
 /**
  * _strchr - locates a character in a string.
  * @s: chain strings
@@ -9,14 +8,13 @@
  */
 char *_strchr(char *s, char c)
 {
-	        for (; ; s++)
-	        {
-		    if (*s == c)
-		         return ( s);
-		    else if (*s == 0)
-			 return (NULL);
-		}
+	for (; ; s++)
+	{
+		if (*s == c)
+			return ( s);
+		else if (*s == 0)
+			return (NULL);
 
-		return (NULL);
+       	}
+	return (NULL);
 }
-
