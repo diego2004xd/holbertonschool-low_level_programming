@@ -1,10 +1,10 @@
 #include "main.h"
 /**
- * _strcmp - compares two strings
- * @s1: first chain text
- * @s2: second chain text
+ * _strspn - compares two strings
+ * @s: first chain text
+ * @accept: second chain text
  *
- * Return: Always 0.
+ * Return: Always number.
  */
 unsigned int _strspn(char *s, char *accept)
 {
