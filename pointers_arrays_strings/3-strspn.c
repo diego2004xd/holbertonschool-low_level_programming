@@ -1,8 +1,10 @@
 #include "main.h"
-/*
- * _strspn function that gets the length of a prefix substring.
- * @s  which consist only of bytes from
- * @f The standard library provides a similar function
+/**
+ * _strcmp - compares two strings
+ * @s1: first chain text
+ * @s2: second chain text
+ *
+ * Return: Always 0.
  */
 unsigned int _strspn(char *s, char *accept)
 {
