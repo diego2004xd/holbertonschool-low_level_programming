@@ -8,10 +8,6 @@
  */
 int main(int argc, char *argv[])
 {
-	/*
-	 * al resertor 1, se obtiene el numero de argumentos de lineas de comandos
-	 * pasados al programa excluyendo el nombre del programa en si.
-	 */
 	 printf("%d\n", argc - 1);
 	 (void)argv;
 	 return (0);
