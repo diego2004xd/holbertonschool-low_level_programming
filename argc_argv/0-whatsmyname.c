@@ -4,7 +4,7 @@
  * @argc: inprimir
  * @argv: copy
  *
- * Return: retorna
+ * Return: Always 0.
  */
 
 int main(int argc, char *argv[])
