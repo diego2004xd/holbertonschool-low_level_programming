@@ -1,19 +1,18 @@
 #include <stdio.h>
-
 /**
- * main -  prints the number of arguments passed into it
- * @argc: Argument count
- * @argv: Argument vector
+ * main - prints the number of arguments passed into it.
+ * @argc: argument count
+ * @argv: argument vector
  *
- * Return: Always 0.
+ * return Always 0.
  */
-int main (int argc, char *argc[])
+int main(int argc, char *argv[])
 {
 	/*
-	 *  Al restar 1, se obtiene el número de argumentos de línea de comandos
-	 *  pasados al programa excluyendo el nombre del programa en sí.
+	 * al resertor 1, se obtiene el numero de argumentos de lineas de comandos
+	 * pasados al programa excluyendo el nombre del programa en si.
 	 */
-	printf("%d", argc - 1);
-	(void)argv;
-	return (0);
+printf("%d\n", argc - 1);
+(void)argc;
+return (0);
 }
