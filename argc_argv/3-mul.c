@@ -10,20 +10,21 @@
  */
 int main(int argc, char *argv[])
 {
-		int index, multiplicando;
+	int index, multiplicando;
 
-		multiplicando = 1;
-		if (argc < 3)
+	multiplicando = 1;
+	if (argc < 3)
 	{
-				printf("error\n");
-				return (1);
-   	}
+		printf("Error\n");
+		return (1);
+	}
 
 	for (index = 1; index < argc; index++)
-{
-			multiplicando = multiplicando * atoi(argv[index]);
-}
+	{
+		/* Pasamos el valor de argv[index] a entero con atoi */
+		multiplicando = multiplicando * atoi(argv[index]);
+	}
 
-printf("%d\n", multiplicando);
-return (0);
+	printf("%d\n", multiplicando);
+	return (0);
 }
