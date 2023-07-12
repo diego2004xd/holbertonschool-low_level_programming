@@ -1,4 +1,4 @@
-#include "main.c"
+#include "main.h"
 
 /**
  * function that creates an array of chars, and initializes it with a specific char.
