@@ -2,34 +2,56 @@
 #include <stdlib.h>
 
 /**
- * *_calloc - This funtion allocates memory for an array, using malloc
+ * string_nconcat - This funtion concatenates two string,
+ * which contains s1, followed by the first n bytes of s2, and null terminated
  *
- * @nmemb : is a long of array
- * @size : is bytes of elements
+ * @s1  : is a pointer of string to one
+ * @s2  : is a pointer of string to two
+ * @n : is a n bytes of s2
  *
- * Return: Pointer to Array
+ * Return: Pointer @copy to contatenates strings
  */
 
-void *_calloc(unsigned int nmemb, unsigned int size)
+char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 {
-	char *ar;
-	unsigned int i = 0;
+	char *copy;
+	unsigned int i = 0, j = 0, k;
 
-	if (nmemb == 0 || size == 0)
-		return (NULL);
-
-	ar = malloc(size * nmemb);
-
-	if (ar == NULL)
-		return (NULL);
-
-	while (i < size * nmemb)
+	if (s1 == NULL && s2 == NULL)
 	{
-		ar[i] = 0;
-		i++;
+		copy = malloc(sizeof(char) * 1);
+		copy[0] = '\0';
+		return (copy);
 	}
+	if (s1 != NULL)
+		for (i = 0; s1[i] != '\0'; i++)
+			;
+	if (s2 != NULL)
+		for (j = 0; s2[j] != '\0'; j++)
+			;
+	if (n > j)
+		copy = malloc(sizeof(char) * (i + j + 1));
+	else
+		copy = malloc(sizeof(char) * (i + n + 1));
 
-	return (ar);
-
+	if (copy == NULL)
+		return (NULL);
+	for (k = 0; k < i; k++)
+		copy[k] = s1[k];
+	if (j == 0)
+		copy[k] = s1[k];
+	else
+		if (n > j)
+		{
+			for (k = i; k <= (i + j); k++)
+				copy[k] = s2[k - i];
+		}
+		else
+		{
+			for (k = i; k < (i + n); k++)
+				copy[k] = s2[k - i];
+			copy[k] = s2[j];
+		}
+	return (copy);
 }
