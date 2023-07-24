@@ -4,7 +4,7 @@
 
 /*
  * File: main.h
- * Author: Ricardo Valdes
+ * Author: beltran
  * Description: Header file of  prototypes for functions
  */
 
